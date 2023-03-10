@@ -1,17 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Los Platos No Se Acaban</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
-  </head>
-  <body>
-    <main>
-        <h1>Los Platos No Se Acaban</h1>  
-    </main>
-	<script src="index.js"></script>
-  </body>
+<html>
+<head>
+	<title>Los Platos No Se Acaban - Stream Now</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body {
+			background-color: black;
+			color: white;
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			margin: 0;
+			padding: 0;
+		}
+
+		header {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 80vh;
+			background-image: url('Los-Platos-No-Se-Acaban-web-social2.jpg');
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+
+		h1 {
+			font-size: 48px;
+			text-align: center;
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 50px;
+		}
+
+		.button {
+			display: inline-block;
+			background-color: #1db954;
+			color: white;
+			padding: 10px 20px;
+			border-radius: 5px;
+			text-decoration: none;
+			margin-bottom: 20px;
+			transition: background-color 0.3s ease;
+		}
+
+		.button:hover {
+			background-color: #1ed760;
+		}
+
+		.services {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		.service {
+			display: inline-block;
+			background-color: white;
+			color: black;
+			padding: 10px 20px;
+			border-radius: 5px;
+			text-decoration: none;
+			margin-right: 20px;
+			margin-bottom: 20px;
+			transition: background-color 0.3s ease;
+		}
+
+		.service:hover {
+			background-color: #f2f2f2;
+		}
+
+		@media (max-width: 768px) {
+			header {
+				height: 60vh;
+			}
+
+			h1 {
+				font-size: 36px;
+			}
+
+			.container {
+				margin-top: 30px;
+			}
+
+			.button {
+				font-size: 14px;
+			}
+
+			.service {
+				font-size: 14px;
+				margin-right: 10px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Los Platos No Se Acaban - Cumbia para lavar platos</h1>
+	</header>
+
+	<div class="container">
+		<a href="#" class="button">Listen Now</a>
+		<div class="services">
+			<a href="#" class="service">Spotify</a>
+			<a href="#" class="service">Apple Music</a>
+			<a href="#" class="service">YouTube Music</a>
+			<a href="#" class="service">Amazon Music</a>
+			<a href="#" class="service">Deezer</a>
+		</div>
+	</div>
+</body>
 </html>

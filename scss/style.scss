@@ -2026,27 +2026,28 @@ img {
 
 .spotify-embeds {
     width: auto;
+    max-height: 100px;
     // padding: 50px;  
-  }
+}
   
-  .spotify-embed {
-    background: #282828;
-    
-    &:not(:last-of-type) {
-      margin-bottom: 5px;
-    }
-    
-    iframe {
-      display: block;
-      transition: opacity 0.125s;
-      .js & {
+.spotify-embed {
+background: #282828;
+
+&:not(:last-of-type) {
+    margin-bottom: 5px;
+}
+
+iframe {
+    display: block;
+    transition: opacity 0.125s;
+        .js & {
         opacity: 0;
         
         &.loaded {
-          opacity: 1;
+            opacity: 1;
         }
-      }
+        }
     }
-  }
+}
 
 /* ====== The End ====== */
